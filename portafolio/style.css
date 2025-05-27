@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+#navbar {
+	width: 100vw;
+	height: 15vh;
+	/* background-color: lightblue; */
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#navbar a {
+	align-self: center;
+	display: inline-block;
+	font-size: 1.75rem;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-weight: lighter;
+	width: fit-content;
+}
+
+#navbar a:nth-child(1) {
+	padding-right: 20px;
+}
+
+#navbar a:nth-child(2) {
+	padding: 20px;
+}
+
+#navbar a:hover {
+	color: #7795f8;
+}
+
+a::after {
+	display: block;
+	position: relative;
+	left: 0;
+	bottom: -25px;
+	width: 0;
+	height: 8px;
+	background-color: #747fe0;
+	content: "";
+	transition: width 0.15s;
+}
+
+a:hover::after {
+	width: 100%;
+}
+
+#blinking {
+	font-size: 5rem;
+	font-weight: 450;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	color: #747fe0;
+}
+
+.hero-container {
+	height: 45vh;
+	width: 100vw;
+	align-items: center;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+.image {
+	width: 70%;
+	height: 100%;
+	overflow: hidden;
+	justify-self: center;
+	padding-top: 20px;
+	box-shadow: 16px 16px 19px 0px #747fe0;
+}
+.hero-container img {
+	height: auto;
+}
+
+/* PROJECTS SECTIONS */
+
+.projects {
+	width: 100vw;
+	height: 75vh;
+	padding-top: 10vw;
+}
+
+.projects h1 {
+	text-align: center;
+	font-size: 1.75rem;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-weight: lighter;
+	width: min-content;
+	margin: 0 auto;
+}
+
+.projects h1::after {
+	display: block;
+	position: relative;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	height: 8px;
+	background-color: #747fe0;
+	content: "";
+	transition: width 0.15s;
+}

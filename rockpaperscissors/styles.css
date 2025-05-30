@@ -1,0 +1,50 @@
+*,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 375px;
+	height: 375px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+.picks-container {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.option {
+	text-align: center;
+}
+
+button,
+img {
+	border-radius: 100%;
+}
+
+h1 {
+	display: inline;
+	width: 200px;
+	text-align: center;
+}
+#user-score,
+#pc-score {
+	display: inline;
+	width: fit-content;
+	font-size: xx-large;
+}
+
+.score {
+	align-content: center;
+	width: 100%;
+	margin: auto;
+	align-content: center;
+	text-align: center;
+	margin-top: 40px;
+}
